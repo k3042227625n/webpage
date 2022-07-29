@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -20,6 +22,7 @@ time, mark, audio, video {
 }
 
 body {
+    color: #53514c;
     line-height:1;
 }
 
@@ -94,11 +97,12 @@ input, select {
 }
 
 body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #53514c;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
+.box_ttl{
+    border-left: 3px solid #000;
 }
 
 
@@ -106,307 +110,288 @@ body {
 
 
 
-
-
-
-
-
-.inner {
-    width: 1100px;
-    margin: 0 auto;
-    /* background: #ddd; */
-}
-
-header {   
-    text-align: right;
-    height: 100px;
-}
-
-header .inner {
+header {
     position: relative;
+    height: 60px;
 }
 
-header h1 {
+.logo {
+    display: inline-block;
+}
+.logo img {
+    width: 100%;
+}
+
+header .logo {
     position: absolute;
-    top: 7px;
-}
-header h1 img {
-    width: 280px;
-}
-
-header ul {
-    padding: 20px 0;
-    display: inline-block;
-    list-style: none;
-    line-height: 1.5;
+    top: 17px;
+    left: 15px;
+    width: 200px;
 }
 
-header ul li:first-child {
-    margin-right: 20px;
-}
-header ul li {
-    display: inline-block;
-    color: #6C757D;
-    text-align: left;
-    vertical-align: middle;
+header nav {
+    display: none;
 }
 
-header ul li a {
-    font-size: 22px;
-    display: inline-block;
-    height: 48px;
-    line-height: 48px;
-    padding: 0 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    background: #6c757d;
+#key_visual {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#key_visual img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+main {
+    width: 100%;
+}
+
+main h2 {
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b99565;
+    line-height: 40px;
     color: #fff;
-}
-
-header ul li a:hover {
-    background: #5A6268;
-}
-
-header ul li h2 {
-    font-size: 13px;
     font-weight: normal;
 }
-header ul li p {
-    font-size: 28px;
-}
 
-nav {
-    background: #343A40;
-    text-align: center;
-}
-
-nav ul {
-    width: 1100px;
-    margin: 0 auto;
-    /* background: #ccc; */
-}
-
-nav ul li {
-    display: inline-block;
-    
-}
-
-nav ul li a {
-    height: 55px;
-    line-height: 55px;
-    display: inline-block;
-    color: #929599;
-    text-decoration: none;
-    padding: 0 35px;
-}
-
-nav ul li a:hover {
-    color: #5A6268;
-}
-
-
-.key_visual {
-    height: 600px;
-    /* background: yellow; */
-    background-image: url(220617.jpg);
-    /* background-repeat: no-repeat;  */
-    background-size: contain;
-    text-align: right;
-}
-
-.key_visual_content {
-    height: 300px;
-    width: 550px;
-    background: #fff;
-    padding: 30px 15px;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 5px;
-    /* paddingの値がwidthの値の範囲内で指定される */
-    box-sizing: border-box;
-    display: inline-block;
-    text-align: left;
-    margin-top: 60px;
-}
-
-.key_visual_content h2 {
-    font-size: 55px;
-    font-weight: 300;
-    margin-bottom: 15px;
-}
-
-.key_visual_content p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 25px;
-}
-
-.notice {
-    font-size: 13px;
-    margin: 0;
-}
-
-.information {
-    margin: 60px;
-}
-
-.information h3 {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: normal;;
-    border-left: 5px solid #AAAAAA;
-    margin-bottom: 10px;
-    padding-left: 5px;
-}
-
-.information .with {
-    display: inline-block;
-    padding-left: 10px;
-    color: #6C757D;
-}
-
-.fancy p {
-    color: #6C757D;
-}
-
-.fancy span {
-    display: inline-block;
-    background: #6c757d;
+main .countainer {
     padding: 10px;
-    color: #fff;
-    border-radius: 4px;
-    font-size: 15px;
-    margin: 25px 10px 5px 0;
-    text-decoration: none;
 }
 
-.fancy h4 {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
+#information ul li {
+    padding: 10px;
 }
 
-.key_visual2 {
-    position: relative;
-    height: 470px;
-    background: #F8F9FA;
-    text-align: right;
+/* 偶数指定 */
+#information ul li:nth-child(even) {
+    background-color: #f5f3ef;
 }
 
-
-.ranzu {
-    position: absolute;
-    top: 20px;
-    left: 80px;
-    color: #660700;
-}
-
-.ranzu h1 {
-    padding: 30px 150px;
-    background: #FCF89D;
-    font-size: 50px;
-    font-weight: normal;
-    border: thick double #000;
-    margin-bottom: 20px;
-}
-
-.ranzu span {
-    font-size: 30px;
-    padding-right: 20px;
-    font-weight: bold;
-}
-
-.ranzu p {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-.key_visual_content2 {
-    display: inline-block;
-    background-image: url(220708.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 400px;
-    width: 550px;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 5px;
-}
-
-.box-container {
-    text-align: center;
-    position: relative;
-}
-
-.subject {
-    position: absolute;
-    top: 30px;
-    left: 80px;
-}
-
-.box-container h3 {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: normal;;
-    border-left: 5px solid #AAAAAA;
+#information ul li time {
+    font-size: 12px;
     margin-bottom: 10px;
-    padding-left: 5px;
-}
-
-.box-container .with {
     display: inline-block;
-    padding-left: 10px;
-    color: #6C757D;
 }
 
-.box {
-    margin-top: 80px;
-    padding: 5px;
-    display: inline-block;
-    width: 350px;
-    height: 480px;
-    border: 1px solid #000;
-    text-align: center;
-     /* paddingの値がwidthの値の範囲内で指定される */
-     box-sizing: border-box;
+#information ul li p {
+    font-size: 14px;
 }
 
-.pic {
-    width: 350px;
-    height: 350px;
+#information ul li p::before {
+    content: "▶︎";
+    padding-right: 5px;
+}
+
+#gourmet article {
+    margin-bottom: 25px;
     
 }
 
-.pic img{
-    max-width: 100%;
-    max-height: 100%;
+#gourmet article h3 {
+    font-size: 16px;
 }
 
-.box h4 {
-    font-size:25px;
-    padding: 15px;
+#gourmet article p {
+    font-size: 14px;
+    line-height: 2em;
 }
 
-.box p {
-    font-size: 18px;
-    font-weight: 300;
+#gourmet article p::before {
+    content: "-";
+    padding: 0 10px;
 }
 
-.box-container h3 {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: normal;;
-    border-left: 5px solid #AAAAAA;
+#gourmet article figure {
     margin-bottom: 10px;
-    padding-left: 5px;
 }
 
-.box-container .with {
-    display: inline-block;
-    padding-left: 10px;
-    color: #6C757D;
-    margin-bottom: 16px;
+#gourmet article figure img {
+    width: 100%;
+    
 }
+
+#gourmet .area li {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #b99565;
+    color: #fff;
+    font-size: 10px;
+}
+
+#gourmet .area li + li {
+    margin-left: 5px;
+}
+
+#gourmet .box_ttl {
+    padding: 5px 0 5px 10px;
+    border-left: 4px solid #412806;
+    margin-bottom: 10px;
+}
+
+#gourmet .box_ttl h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer ul {
+    padding: 30px 0;
+    background-color: #53514c;
+}
+
+footer ul li {
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+/* 隣接した2つ目のli */
+footer ul li + li {
+    margin-top: 5px;
+}
+
+footer ul li a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer .logo {
+    width: 160px;
+    margin: 15px 0 10px;
+}
+
+footer p small {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 80px;
+    }
+
+    header .logo {
+        top: 25px;
+        left: 25px;
+        width: 250px;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 21px;
+    }
+
+    header nav ul {
+        padding-right: 20px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        font-size: 17px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 2px;
+    }
+
+    header nav ul li:hover {
+        background: #b99565;
+    }
+
+    header nav ul li:hover a {
+        color: #fff;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 0 20px;
+        color: #9c9b98;
+        text-decoration: none;
+    }
+
+    #key_visual {
+        margin-bottom: 30px;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    main .countainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #gourmet article {
+        width: calc(50% - 5px);
+    }
+
+    #information {
+        margin-bottom: 50px;
+    }
+
+    #information ul {
+        list-style: none;
+    }
+
+    #information ul li time {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    #information ul li p {
+        display: inline-block;
+    }
+
+    #information ul li p::before {
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+    footer ul li {
+        display: inline-block;
+        width: 120px;
+        font-size: 17px;
+        transition: .3s;
+    }
+    footer ul li + li {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    footer ul li:hover {
+        background: #fff;
+    }
+
+    footer ul li:hover a {
+        color: #53514c;
+    }
+}
+
+@media (min-width: 1000px) {
+    main .countainer {
+        padding: 10px 0;
+    }
+
+    
+}
+
 
 
 
