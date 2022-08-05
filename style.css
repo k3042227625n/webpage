@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 html, body, div, span, object, iframe,
@@ -310,7 +311,8 @@ main .countainer {
 
 #gourmet article figure img {
     width: 100%;
-    
+    height: 400px;
+    object-fit: cover;
 }
 
 #gourmet .area li {
@@ -334,6 +336,10 @@ main .countainer {
 
 #gourmet .box_ttl h3 {
     margin-bottom: 10px;
+}
+
+#gourmet article p a {
+    text-decoration: none;
 }
 
 footer {
@@ -397,7 +403,7 @@ footer p small {
         font-size: 12px;
     }
     header {
-        height: 80px;
+        height: 50px;
     }
     header h1 {
         top: 24px;
@@ -453,6 +459,13 @@ footer p small {
     main {
         padding-bottom: 50px;
     }
+
+    main .countainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     main h2 {
         padding-left: 20px;
     }
@@ -460,6 +473,7 @@ footer p small {
         margin-bottom: 50px;
     }
     #information ul {
+        list-style: none;
         font-size: 1.2rem;
     }
     #information ul li time {
@@ -474,11 +488,6 @@ footer p small {
         margin-right: 10px;
         vertical-align: middle;
     }
-    #gourmet .container {
-		justify-content: space-between;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-    }
     #gourmet article {
         width: calc(50% - 5px);
         padding: 0;
@@ -486,6 +495,7 @@ footer p small {
     footer ul li {
         display: inline-block;
         width: 120px;
+        transition: .2s;
         margin: 0 10px;
     }
     footer ul li a {
@@ -493,6 +503,12 @@ footer p small {
     }
     footer .logo {
         margin: 20px 0 5px;
+    }
+    footer li:hover {
+        background-color: #fff;
+    }
+    footer ul li:hover a {
+    	color: #53514c;
     }
     footer .logo img {
         width: 200px;
@@ -511,3 +527,13 @@ footer p small {
         width: calc(50% - 5px);
     }
 }
+
+
+
+
+
+
+
+
+
+
